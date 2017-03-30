@@ -28,6 +28,10 @@ $collection = Collection::instance($array);
 
 ### Available methods and implementation methods
 
+In this documentation we will describe the most necessary methods, and all the rest, and you can see a lot of them in the code, everything is described there
+
+***
+
 The magic method for creating and retrieving a new item for the collection
 ```php
 $collection->new_array = 'value';
@@ -105,4 +109,87 @@ Determine if the collection is empty.
 
 ```php
 $collection->isNotEmpty();
+```
+
+**has()**
+
+Determine if an element exists in the collection by key.
+
+```php
+$collection->has('project');
+```
+
+**forget()**
+
+Remove an item from the collection by key.
+
+```php
+$collection->forget('name');
+```
+
+**archive()**
+
+Archive the collection with one or more arrays.
+
+```php
+$new_collection = Collection::instance(['test', 'test1']);
+$new_collection->archive([50, 22]);
+```
+
+**clear()**
+
+Clearing Attributes in the Collection
+
+```php
+$collection->clear();
+```
+
+**count()**
+
+Count the number of items in the collection.
+
+```php
+$collection->count()
+```
+
+**flip()**
+
+We turn the elements into collections.
+
+```php
+
+$flip = $collection->flip();
+$flip->all();
+```
+
+**values()**
+
+Get values from items in the collection
+
+```php
+$collection->values();
+```
+
+**keys()**
+
+Get the keys to the attributes of the collection.
+
+```php
+$collection->keys();
+```
+
+**indexOf()**
+
+We search for a specific value in the collection
+
+```php
+$collection->indexOf('Shamsudin');
+```
+
+**all()**
+
+Get all attributes
+
+```php
+$collection->all();
 ```
