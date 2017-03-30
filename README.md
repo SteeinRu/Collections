@@ -3,8 +3,6 @@ Collection library for working with data.
 
 ## Using Collection
 
-### Declaring the main class
-
 ```php
 use Steein\Common\Collections\Collection;
 
@@ -20,7 +18,10 @@ $array = [
     ]
 ];
 
+//Default
 $collection = new Collection($array);
-```
 
-### Available methods and implementation methods
+Or Static implementation
+$collection = Collection::instance($array);
+
+```
