@@ -14,7 +14,7 @@ $array = [
 
     'Cars'  =>  [
         'car_audi' =>  'Audi',
-        'car_bwm    =>  'Bmw'
+        'car_bwm'  =>  'Bmw'
     ]
 ];
 
