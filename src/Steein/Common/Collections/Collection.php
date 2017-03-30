@@ -42,7 +42,7 @@ class Collection extends StackBundle implements \ArrayAccess, \Countable, ArrayI
      *
      * @return static
      */
-    public function instance($attributes = [])
+    public static function instance($attributes = [])
     {
         return new static($attributes);
     }
