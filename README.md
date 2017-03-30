@@ -21,7 +21,7 @@ $array = [
 //Default
 $collection = new Collection($array);
 
-Or Static implementation
+//Or Static implementation
 $collection = Collection::instance($array);
 
 ```
