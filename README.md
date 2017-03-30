@@ -54,6 +54,7 @@ $collection->toJson();
 ```
 
 **toXml()**
+
 Getting the collections of elements in the Json format.
 
 ```php
