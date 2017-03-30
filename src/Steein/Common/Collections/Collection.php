@@ -38,7 +38,7 @@ class Collection extends StackBundle implements \ArrayAccess, \Countable, ArrayI
      * Этот метод предоставляется для производных классов, чтобы указать, как новый
      * Экземпляр должен быть создан при изменении семантики конструктора.
      *
-     * @param array $attributes.
+     * @param array $attributes
      *
      * @return static
      */
