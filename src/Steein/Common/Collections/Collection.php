@@ -146,7 +146,7 @@ class Collection extends StackBundle implements \ArrayAccess, \Countable, ArrayI
     }
 
     /****
-     * Получаем ключи от предметов коллекции.
+     * Получаем ключи от атрибутов коллекции.
      *
      * @return mixed
     */
@@ -253,7 +253,6 @@ class Collection extends StackBundle implements \ArrayAccess, \Countable, ArrayI
     {
         $this->attributes   =   [];
     }
-
 
     /****
      * Поместите элемент в коллекцию по ключу.
@@ -587,7 +586,7 @@ class Collection extends StackBundle implements \ArrayAccess, \Countable, ArrayI
      * @return bool
      * @abstracting ArrayAccess
      */
-    public function __isset ($key) {
+    public function __isset($key) {
         return isset($this->attributes[$key]);
     }
 
