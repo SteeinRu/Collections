@@ -1,7 +1,7 @@
 {
   "name": "steein/collections",
   "type": "library",
-  "description": "Collections Abstraction library",
+  "description": "Steein Collections - Collection library for working with data. Edit",
   "keywords": ["collections", "array", "iterator"],
   "homepage": "http://www.steein.ru",
   "license": "MIT",
