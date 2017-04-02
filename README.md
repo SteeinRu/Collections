@@ -37,6 +37,30 @@ The magic method for creating and retrieving a new item for the collection
 $collection->new_array = 'value';
 ```
 
+**toArray()**
+
+Getting the collections of elements in the Array format.
+
+```php
+$collection->toArray()
+```
+
+**toJson()**
+
+Getting the collections of elements in the Json format.
+
+```php
+$collection->toJson();
+```
+
+**toXml()**
+
+Getting the collections of elements in the Json format.
+
+```php
+$collection->toXml();
+```
+
 **set()**
 
 New item for collection
