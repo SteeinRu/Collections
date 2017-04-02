@@ -2,6 +2,7 @@
 namespace Steein\Common\Collections;
 
 use IteratorAggregate;
+use CachingIterator;
 use Steein\Common\Collections\Bundle\StackBundle;
 use Steein\Common\Collections\Intefaces\ArrayInterface;
 use Steein\Common\Collections\Intefaces\JsonInterface;
@@ -132,6 +133,20 @@ class Collection extends StackBundle implements \ArrayAccess, \Countable, ArrayI
     public function offsetUnset($key = null)
     {
         unset($this->attributes[$key]);
+    }
+
+    /**
+     * Возьмите первый или последний {$limit} атрибут.
+     *
+     * @param  int  $limit
+     * @return static
+     */
+    public function take($limit = 0)
+    {
+        if($limit < 0)
+            return $this->slice($limit, abs($limit));
+
+        return $this->slice(0, $limit);
     }
 
     /****
@@ -515,6 +530,16 @@ class Collection extends StackBundle implements \ArrayAccess, \Countable, ArrayI
     {
         $this->attributes = $this->map($callable)->all();
         return $this;
+    }
+
+    /****
+     * Получить базовый экземпляр коллекции поддержки из этой коллекции.
+     *
+     * @return \Steein\Common\Collections\Collection
+    */
+    public function base()
+    {
+        return new self($this);
     }
 
     /****
