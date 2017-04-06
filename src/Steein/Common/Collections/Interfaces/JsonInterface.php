@@ -1,5 +1,5 @@
 <?php
-namespace Steein\Common\Collections\Intefaces;
+namespace Steein\Common\Collections\Interfaces;
 
 
 interface JsonInterface

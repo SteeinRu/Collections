@@ -2,9 +2,9 @@
 namespace Steein\Common\Collections\Bundle;
 
 
-use Steein\Common\Collections\Intefaces\ArrayInterface;
-use Steein\Common\Collections\Intefaces\JsonInterface;
-use Steein\Common\Collections\Intefaces\JsonSerialize;
+use Steein\Common\Collections\Interfaces\ArrayInterface;
+use Steein\Common\Collections\Interfaces\JsonInterface;
+use Steein\Common\Collections\Interfaces\JsonSerialize;
 use Steein\Common\Collections\Bundle\Converter\XmlConverter;
 
 abstract class StackBundle

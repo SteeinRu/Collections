@@ -2,11 +2,11 @@
 namespace Steein\Common\Collections;
 
 use IteratorAggregate;
-use CachingIterator;
 use Steein\Common\Collections\Bundle\StackBundle;
-use Steein\Common\Collections\Intefaces\ArrayInterface;
-use Steein\Common\Collections\Intefaces\JsonInterface;
-use Steein\Common\Collections\Intefaces\JsonSerialize;
+use Steein\Common\Collections\Interfaces\ArrayInterface;
+use Steein\Common\Collections\Interfaces\JsonInterface;
+use Steein\Common\Collections\Interfaces\JsonSerialize;
+
 
 /****
  * Этот файл является частью пакета Steein.
