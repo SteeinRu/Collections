@@ -181,6 +181,21 @@ class Collection extends StackBundle implements \ArrayAccess, \Countable, ArrayI
     }
 
     /****
+     * Создайте новую коллекцию, вызывая обратный вызов определенное количество раз.
+     *
+     * @param $quantity
+     * @param callable $callable
+     * @return static
+     */
+    public function times($quantity, callable $callable)
+    {
+        if($quantity < 1)
+            return new static;
+
+        return (new static(range(1, $quantity)))->map($callable);
+    }
+
+    /****
      * Запускаем карту для каждого элемента.
      *
      * @param callable $callable
